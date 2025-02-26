@@ -1,0 +1,8 @@
+- name: Organization mirror
+  uses: Yikun/hub-mirror-action@mater
+  with:
+    src: TravelTibet
+    dst: gitee/kunpengcompute
+    dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+    dst_token: ${{ secrets.GITEE_TOKEN }}
+    account_type: org
